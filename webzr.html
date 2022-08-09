@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://unpkg.com/wrld.js@1.x.x"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+  <div style="position: relative">
+    <div id="map" style="height: 1000px"></div>
+    <script>
+      var map = Wrld.map("map", "0d6ea21e21eea7ddf69773708c414c57", {
+        center: [54.560, -2.21],
+        zoom: 7
+      });
+      var marker1 = Wrld.marker([55, -1.866], {
+        elevation: 260.0,
+        title: "North East county"
+      }).addTo(map);
+
+      marker1.bindPopup("<b>Population of North East County</b><br>2,596,886").addTo(map);
+      
+      var marker2 = Wrld.marker([54.01,-2.633], {
+        elevation: 260.0,
+        title: "North West county"
+      }).addTo(map);
+
+      marker2.bindPopup("<b>Population of North West County</b><br>7,052,177").addTo(map);
+      var marker3 = Wrld.marker([53.90,-1.033], {
+        elevation: 260.0,
+        title: "Yorkshire and The humber"
+      }).addTo(map);
+
+      marker3.bindPopup("<b>Population of Yorkshire and the humber County</b><br>5,283,733").addTo(map);
+      var marker4 = Wrld.marker([52.98,-0.75], {
+        elevation: 260.0,
+        title: "East midland"
+      }).addTo(map);
+
+      marker4.bindPopup("<b>Population of East midland County</b><br>4,533,222").addTo(map);
+      var marker5 = Wrld.marker([52.47,-2.29], {
+        elevation: 260.0,
+        title: "West midland"
+      }).addTo(map);
+
+      marker5.bindPopup("<b>Population of West midland County</b><br>5,601,847").addTo(map);
+      var marker6 = Wrld.marker([52.24,0.41], {
+        elevation: 260.0,
+        title: "East England"
+      }).addTo(map);
+
+      marker6.bindPopup("<b>Population of East England County</b><br>5,846,965").addTo(map);
+      var marker7 = Wrld.marker([51.5,-0.1], {
+        elevation: 260.0,
+        title: "London county"
+      }).addTo(map);
+
+      marker7.bindPopup("<b> Population of London county</b><br>8,173,941").addTo(map);
+      var marker8 = Wrld.marker([51.31,-0.5], {
+        elevation: 260.0,
+        title: "South East county"
+      }).addTo(map);
+
+      marker8.bindPopup("<b> Population of South East County</b><br>8,634,750").addTo(map);
+      var marker9 = Wrld.marker([50.777,-3.999], {
+        elevation: 260.0,
+        title: "South west county"
+      }).addTo(map);
+
+      marker9.bindPopup("<b> Population of South West County</b><br>5,288,935").addTo(map);
+      var marker10 = Wrld.marker([52.325,-3.799], {
+        elevation: 260.0,
+        title: "Wales"
+      }).addTo(map);
+
+      marker10.bindPopup("<b>Population of Wales</b><br>3,063,456").addTo(map);
+      var marker11 = Wrld.marker([56.688,-4.042], {
+        elevation: 260.0,
+        title: "Scotland"
+      }).addTo(map);
+
+      marker11.bindPopup("<b>Population of Scotland</b><br>5,500,000").addTo(map);
+    </script>
+
+  </div>
+  </body>
+</html>

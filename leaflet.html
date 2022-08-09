@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>leaflet map</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+        <style>
+            #map { height: 1000px; }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="map"></div>
+        <script>
+            var map = L.map('map').setView([54.560, -2.21], 8);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+            var pop1 = L.marker([55,-1.866]).addTo(map);
+            pop1.bindPopup("<b>Population of North East County</b><br>2,596,886",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop2 = L.marker([54.01,-2.633]).addTo(map);
+            pop2.bindPopup("<b>Population of North West County</b><br>7,052,177",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop3 = L.marker([53.90,-1.033]).addTo(map);
+            pop3.bindPopup("<b>Population of Yorkshire and the humber County</b><br>5,283,733",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop4 = L.marker([52.98,-0.75]).addTo(map);
+            pop4.bindPopup("<b>Population of East midland County</b><br>4,533,222",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop5 = L.marker([52.47,-2.29]).addTo(map);
+            pop5.bindPopup("<b>Population of West midland County</b><br>5,601,847",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop6 = L.marker([52.24,0.41]).addTo(map);
+            pop6.bindPopup("<b>Population of East England County</b><br>5,846,965",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop7 = L.marker([51.5,-0.1]).addTo(map);
+            pop7.bindPopup("<b> Population of London county</b><br>8,173,941",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop8 = L.marker([51.31,-0.5]).addTo(map);
+            pop8.bindPopup("<b> Population of South East County</b><br>8,634,750",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop9 = L.marker([50.777,-3.999]).addTo(map);
+            pop9.bindPopup("<b> Population of South West County</b><br>5,288,935",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop10 = L.marker([52.325,-3.799]).addTo(map);
+            pop10.bindPopup("<b>Population of Wales</b><br>3,063,456",{closeOnClick: false, autoClose:false}).addTo(map);
+            var pop11 = L.marker([56.688,-4.042]).addTo(map);
+            pop11.bindPopup("<b>Population of Scotland</b><br>5,500,000",{closeOnClick: false, autoClose:false}).addTo(map);
+
+            
+        </script>
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
